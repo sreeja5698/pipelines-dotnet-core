@@ -28,7 +28,7 @@ stage('Build') {
    stage('deploy') {
         steps {
         azureWebAppPublish azureCredentialsId: params.azure_cred_id,
-            resourceGroup: "myResourceGroup", appName: "jenkinssample5698", sourceDirectory: "bin/Release/netcoreapp2.2/publish/"
+            resourceGroup: "Rg-MyWebApp", appName: "HarmanWebPage", sourceDirectory: "bin/Release/netcoreapp2.2/publish/"
         }
     }
  }
